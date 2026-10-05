@@ -1,0 +1,12 @@
+import { readFile, stat } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const html = await readFile('dist/index.html', 'utf8');
+assert(!html.includes('{{'), 'Unresolved template');
+assert(!/\ssrc=/.test(html.match(/<video id="tour-video"[^>]*>/)[0]), 'Enhanced video must have no initial src');
+assert(html.includes('preload="none"') && html.includes('playsinline'), 'Video mobile attributes');
+for (const match of html.matchAll(/(?:src|href|poster)="(\.\/[^"?#]+)"/g)) await stat(`dist/${match[1].slice(2)}`);
+assert((html.match(/fetchpriority="high"/g) || []).length === 1, 'Only hero receives high priority');
+assert((html.match(/<h1>/g) || []).length === 1, 'Exactly one primary heading');
+assert((await stat('dist/media/recorrido.mp4')).size < 7 * 1024 * 1024, 'Video budget < 7 MiB');
+assert((await stat('dist/media/hero-480.webp')).size < 160 * 1024, 'Mobile hero budget < 160 KiB');
+console.log('Asset links, video loading, metadata structure and media budgets passed.');

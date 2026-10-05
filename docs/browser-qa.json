@@ -1,0 +1,208 @@
+[
+  {
+    "engine": "chromium",
+    "width": 360,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "chromium",
+    "width": 430,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "chromium",
+    "width": 768,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "chromium",
+    "reducedMotion": "passed"
+  },
+  {
+    "engine": "chromium",
+    "noJavaScript": "passed"
+  },
+  {
+    "engine": "webkit",
+    "width": 360,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "webkit",
+    "width": 430,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "webkit",
+    "width": 768,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "status": "passed",
+    "initialVideoRequests": 0,
+    "checks": [
+      "no overflow",
+      "menu",
+      "lazy video",
+      "autoplay muted",
+      "tap pause/resume",
+      "manual pause retained",
+      "sound control",
+      "offscreen pause",
+      "gallery keyboard/focus",
+      "floating CTA visibility",
+      "no runtime/network errors"
+    ]
+  },
+  {
+    "engine": "webkit",
+    "reducedMotion": "passed"
+  },
+  {
+    "engine": "webkit",
+    "noJavaScript": "passed"
+  }
+]

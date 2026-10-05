@@ -1,0 +1,159 @@
+[
+  {
+    "name": "hero",
+    "source": "IMG_0208_2",
+    "originalDimensions": [
+      3024,
+      4032
+    ],
+    "widths": [
+      480,
+      800,
+      1280,
+      1800
+    ]
+  },
+  {
+    "name": "exterior",
+    "source": "IMG_0196_2",
+    "originalDimensions": [
+      3024,
+      4032
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "wood",
+    "source": "IMG_0197_2",
+    "originalDimensions": [
+      3024,
+      4032
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "upstairs",
+    "source": "IMG_0186",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "upstairsDetail",
+    "source": "IMG_0190",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "downstairs",
+    "source": "IMG_0236",
+    "originalDimensions": [
+      3024,
+      4032
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "bathUp",
+    "source": "IMG_0157_2",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "bathDown",
+    "source": "IMG_0263",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "view",
+    "source": "IMG_0178",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "facade",
+    "source": "IMG_0202",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "courtyard",
+    "source": "IMG_0252",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  },
+  {
+    "name": "roomWood",
+    "source": "IMG_0217",
+    "originalDimensions": [
+      4284,
+      5712
+    ],
+    "widths": [
+      480,
+      800,
+      1280
+    ]
+  }
+]

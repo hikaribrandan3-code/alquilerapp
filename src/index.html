@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#132e20">
+  <title>Habitaciones en Yofre Sud, Córdoba | Mariano Habitación</title>
+  <meta name="description" content="Habitaciones en Yofre Sud, Córdoba. Wi-Fi, servicios incluidos y un ambiente tranquilo. Conocé el lugar y consultá disponibilidad con Mariela.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Un rincón de madera en Yofre Sud, Córdoba">
+  <meta property="og:description" content="3 habitaciones, 2 baños y un ambiente tranquilo. Wi-Fi y servicios incluidos. Consultá con Mariela.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Habitaciones en Yofre Sud, Córdoba">
+  <meta name="twitter:description" content="Un rincón de madera para sentirte en casa. Conocé las habitaciones y consultá con Mariela.">
+  {{metadata}}
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <noscript><style>.menu-toggle,.video-card,.video-hint,.floating-whatsapp{display:none}.navigation{position:static;display:flex;flex-wrap:wrap;gap:8px;background:transparent;color:inherit;padding:0;box-shadow:none}.navigation a{font-size:12px;border:0;padding:6px}.header{flex-wrap:wrap}.gallery-item:nth-child(n){display:block}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#el-lugar">Ir al contenido</a>
+  <header class="hero" id="inicio">
+    {{photo:hero|Exterior de madera con ventana, flores y cielo azul en Yofre Sud|hero-photo|hero}}
+    <div class="hero-shade"></div>
+    <nav class="header shell" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span>{{icon:pin}} Yofre Sud, Córdoba {{icon:leaf}}</span><small>Tranquilidad · Comodidad · Hogar</small></a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation">{{icon:menu}}</button>
+      <div class="navigation" id="navigation"><a href="#el-lugar">El lugar</a><a href="#habitaciones">Habitaciones</a><a href="#galeria">Galería</a><a href="#ubicacion">Ubicación</a><a href="#contacto">Contacto {{icon:arrow}}</a></div>
+    </nav>
+    <div class="hero-copy shell">
+      <p class="eyebrow desktop-only">HABITACIONES EN CÓRDOBA</p>
+      <h1>Un rincón de madera para sentirte en casa.</h1>
+      <p>Habitaciones en un espacio tranquilo, cómodo y diferente en Yofre Sud, Córdoba.</p>
+      <a class="button whatsapp" href="{{whatsapp}}" target="_blank" rel="noopener noreferrer">{{icon:whatsapp}}<span>Consultar por WhatsApp</span>{{icon:arrow}}</a>
+    </div>
+    <a class="scroll-cue" href="#el-lugar" aria-label="Descubrir el lugar">{{icon:down}}</a>
+    <svg class="wave hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 45Q180 0 360 40T720 45T1080 40T1440 30V80H0Z"/></svg>
+  </header>
+  <main>
+    <div class="facts shell" aria-label="Características principales">
+      <div><span>{{icon:bed}}</span><p>3<br>habitaciones</p></div><div><span>{{icon:shower}}</span><p>2<br>baños</p></div><div><span>{{icon:bus}}</span><p>10–15 min<br>al centro</p></div><div><span>{{icon:shield}}</span><p>Zona<br>tranquila</p></div>
+    </div>
+    <section class="place shell section" id="el-lugar" aria-labelledby="place-title">
+      <div class="place-copy"><p class="eyebrow desktop-only">UN LUGAR PARA BAJAR UN CAMBIO</p><h2 id="place-title">El lugar</h2><p>Un espacio simple y cómodo, construido en madera, con un ambiente tranquilo. Ideal para una estadía relajada, ya sea por trabajo, estudio o para vivir en la ciudad.</p><div class="place-note desktop-only">{{icon:leaf}}<span>Madera, luz natural<br>y un ritmo más tranquilo.</span></div></div>
+      <div class="place-image">{{photo:exterior|Ventana de la construcción de madera con una maceta de flores|place-photo}}
+      <blockquote><svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 45Q180 0 360 40T720 45T1080 40T1440 30V80H0Z"/></svg>{{icon:leaf}}<p>Tranquilidad, comodidad<br>y un ambiente diferente<br>en Córdoba.</p><span></span></blockquote></div>
+    </section>
+    <section class="tour shell section" id="recorrido" aria-labelledby="tour-title">
+      <div class="tour-copy"><p class="eyebrow desktop-only">UNA MIRADA DE CERCA</p><h2 id="tour-title">Conocé el lugar</h2><p>Un vistazo a las habitaciones y al ambiente en Yofre Sud.</p><p class="tour-note desktop-only">Recorré el espacio a tu ritmo.<br>Imaginá tu día a día acá.</p></div>
+      <div class="video-card" id="video-card">
+        <video id="tour-video" width="720" height="1246" playsinline muted preload="none" poster="./media/video-poster.webp" data-src="./media/recorrido.mp4" aria-label="Recorrido real por la propiedad en Yofre Sud">{{captions}}Tu navegador no puede reproducir este video.</video>
+        <button class="video-surface" id="video-toggle" aria-label="Reproducir recorrido"><span class="play-indicator">{{icon:play}}</span></button>
+        <div class="video-toolbar"><span id="video-time" aria-hidden="true">0:24</span><button id="sound-toggle" aria-label="Activar sonido" aria-pressed="false">{{icon:muted}}</button><button id="native-toggle" aria-label="Mostrar controles del video">{{icon:menu}}</button></div>
+        <div class="video-progress" aria-hidden="true"><span id="video-progress"></span></div>
+        <p class="video-error" id="video-error" hidden>No pudimos cargar el recorrido. <a href="./media/recorrido.mp4">Abrir el video</a></p>
+      </div>
+      <p class="video-hint">Tocá para pausar o reproducir. Activá el sonido cuando quieras.</p>
+      <noscript><video class="video-fallback" width="720" height="1246" controls playsinline preload="none" poster="./media/video-poster.webp" src="./media/recorrido.mp4" aria-label="Recorrido real de la propiedad"></video></noscript>
+    </section>
+    <section class="rooms shell section" id="habitaciones" aria-labelledby="rooms-title">
+      <div class="section-heading"><h2 id="rooms-title">Habitaciones</h2><p>3 habitaciones distribuidas en dos plantas, con 2 baños.</p></div>
+      <div class="room-groups">
+        <div class="floor upstairs"><div class="floor-label">{{icon:stairs}}<div><h3>Planta alta</h3><p>Dos habitaciones con baño entre ambas.</p></div></div><div class="room-grid"><figure class="room-card">{{photo:upstairs|Habitación de planta alta con paredes y piso de madera, ventana y puerta abierta|room-photo}}<figcaption>{{icon:bed}}<span>Habitaciones 1 y 2<small>Planta alta · vista del espacio</small></span></figcaption></figure><figure class="room-card">{{photo:upstairsDetail|Otra vista del espacio de madera de planta alta con luz natural|room-photo}}<figcaption>{{icon:bed}}<span>Habitaciones 1 y 2<small>Planta alta · otra vista</small></span></figcaption></figure></div><p class="room-caption">Vistas de los espacios de planta alta.</p></div>
+        <div class="floor downstairs"><div class="floor-label">{{icon:stairs}}<div><h3>Planta baja</h3><p>Una habitación con baño.</p></div></div><figure class="room-card">{{photo:downstairs|Habitación de planta baja con piso oscuro, cama de madera y paredes claras|room-photo}}<figcaption>{{icon:bed}}<span>Habitación 3<small>Planta baja</small></span></figcaption></figure></div>
+      </div>
+    </section>
+    <section class="bathrooms shell section" aria-labelledby="bath-title"><h2 id="bath-title">Baños</h2><div class="bath-grid"><figure>{{photo:bathUp|Baño de planta alta con paredes de madera, ducha y revestimiento gris|bath-photo}}<figcaption>{{icon:shower}} Baño planta alta</figcaption></figure><figure>{{photo:bathDown|Baño de planta baja con lavatorio, ducha y revestimiento claro|bath-photo}}<figcaption>{{icon:home}} Baño planta baja</figcaption></figure></div></section>
+    <section class="gallery shell section" id="galeria" aria-labelledby="gallery-title"><div class="heading-row"><h2 id="gallery-title">Galería</h2><a class="text-link" href="./media/hero-1280.jpg" id="see-all">Ver todas {{icon:arrow}}</a></div><div class="gallery-grid">{{gallery}}</div><div class="gallery-footer"><p>Los detalles que hacen al lugar.</p><span>01 — 12</span></div></section>
+    <section class="amenities shell section" aria-labelledby="amenities-title"><h2 id="amenities-title">Comodidades</h2><div class="amenities-grid"><div>{{icon:wifi}}<span>Wi-Fi</span></div><div>{{icon:bolt}}<span>Electricidad<br>y agua</span></div><div>{{icon:sofa}}<span>Espacio<br>amueblado</span></div><div>{{icon:washer}}<span>Lavadora</span></div><div>{{icon:moto}}<span>Estacionamiento<br>para motos</span></div><div>{{icon:camera}}<span>Cámaras<br>de seguridad</span></div><div>{{icon:leaf}}<span>Ambiente<br>tranquilo</span></div><div>{{icon:bus}}<span>A 10–15 min del<br>centro en colectivo</span></div><div>{{icon:plug}}<span>Servicios<br>incluidos</span></div></div></section>
+    <section class="location shell section" id="ubicacion" aria-labelledby="location-title"><div><h2 id="location-title">Ubicación</h2><div class="location-item"><span>{{icon:pin}}</span><div><h3>Yofre Sud, Córdoba</h3><p>En una zona tranquila y residencial, alejada del movimiento del centro, pero con acceso rápido.</p></div></div><div class="location-item"><span>{{icon:bus}}</span><div><h3>10–15 minutos al centro de Córdoba</h3><p>En colectivo, con varias líneas cercanas.</p></div></div></div>{{photo:view|Vista de los techos y árboles de Yofre Sud desde una ventana de la propiedad|location-photo}}</section>
+    <section class="important shell section" aria-labelledby="important-title"><h2 id="important-title">Importante</h2><div class="important-grid"><p>{{icon:paw}}<span>No se aceptan mascotas.</span></p><p>{{icon:people}}<span>Ideal para estudiantes, trabajadores o estadías de mediano plazo.</span></p><p>{{icon:home}}<span>Zona tranquila con cámaras de seguridad para mayor tranquilidad.</span></p></div></section>
+    <section class="contact" id="contacto" aria-labelledby="contact-title"><svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 45Q180 0 360 40T720 45T1080 40T1440 30V80H0Z"/></svg><div class="contact-inner shell">{{icon:leaf}}<h2 id="contact-title">¿Te interesa?</h2><p>Escribinos por WhatsApp y te contamos disponibilidad, precios y cualquier otra duda.</p><a class="button whatsapp" href="{{whatsapp}}" target="_blank" rel="noopener noreferrer">{{icon:whatsapp}}<span>Consultar por WhatsApp</span>{{icon:arrow}}</a>{{email}}<p class="signature">Yofre Sud, Córdoba <span>·</span> Un lugar para sentirte en casa.</p></div></section>
+  </main>
+  <a class="floating-whatsapp whatsapp" href="{{whatsapp}}" target="_blank" rel="noopener noreferrer" aria-label="Consultar a Mariela por WhatsApp">{{icon:whatsapp}}<span>Consultá con Mariela</span></a>
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption"><div class="lightbox-top"><span id="lightbox-count"></span><button id="lightbox-close" aria-label="Cerrar galería">{{icon:close}}</button></div><div class="lightbox-image-wrap"><img id="lightbox-image" alt="" width="1280" height="1707"></div><div class="lightbox-bottom"><button id="gallery-prev" aria-label="Foto anterior">{{icon:arrow}}</button><p id="lightbox-caption"></p><button id="gallery-next" aria-label="Foto siguiente">{{icon:arrow}}</button></div></dialog>
+</body>
+</html>
