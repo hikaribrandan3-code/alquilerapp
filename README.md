@@ -23,7 +23,8 @@ Edit `src/config.mjs`, then rebuild:
 
 - `whatsappNumber` and `whatsappMessage`: one shared source for every CTA. Currently wired to the confirmed Mariela contact.
 - `email`: blank until an actual address is confirmed; no public placeholder.
-- `productionUrl`: blank until the real deployment URL is known; enables canonical and Open Graph URL metadata.
+- `productionUrl`: verified Vercel production URL; supplies canonical, social and structured-data URLs.
+- `socialImage`: root-relative path to the optimized 1200 × 630 social card.
 - `captions`: optional relative URL to an accurate Spanish WebVTT file in `public/`. The supplied video already has text embedded in the image; no separate caption file was supplied.
 
 Page copy lives in `src/index.html`, style in `src/styles.css`, and behavior in `src/app.js`. Images and video are in `public/media/`. The build renders all static content and contact links; JavaScript only enhances interactions. Without JavaScript, the tour uses native controls and gallery photos remain accessible as image links.

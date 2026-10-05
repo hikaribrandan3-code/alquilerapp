@@ -1,6 +1,6 @@
 # Completed verification
 
-Production build, asset checks and contact tests passed on 5 October 2026.
+Production build, asset checks, contact tests and SEO/social metadata validation passed on 5 October 2026.
 
 Chromium (installed Chrome) and WebKit 26.5 passed at 360, 390, 430, 768 and 1440 px. The machine-readable results are in `browser-qa.json`. Full-page captures were inspected for mobile and desktop composition, image cropping and room labels.
 
@@ -16,6 +16,8 @@ Verified:
 - Without JavaScript, native video controls and all gallery image links remain available.
 - Every WhatsApp CTA uses the confirmed number and exact prefilled message.
 - Responsive WebP/JPEG, explicit media dimensions, lazy below-fold images, eager high-priority hero.
+- Open Graph and X/Twitter cards reference the same absolute HTTPS 1200 × 630 social image; canonical and JSON-LD URLs use the verified Vercel project domain.
+- JSON-LD `WebPage` and `Accommodation` facts parse correctly and contain only confirmed property details.
 
 Media:
 
@@ -25,4 +27,4 @@ Media:
 - Mobile 480 px WebP hero: about 38 KB.
 - Production JavaScript: about 9 KB uncompressed; no external runtime dependencies or fonts.
 
-Limits: these are desktop browser-engine and viewport tests, not tests on physical iPhones or Android devices. Real cellular Core Web Vitals depend on the eventual hosting, caching and network; no field-performance score is claimed. Email and canonical URL remain blank pending confirmed values. No exact address, prices or availability were invented.
+Limits: these are desktop browser-engine and viewport tests, not tests on physical iPhones or Android devices. Real cellular Core Web Vitals depend on hosting, caching and network; no field-performance score is claimed. No exact address, prices or availability were invented.

@@ -20,6 +20,38 @@ const galleryEntries = [
   ['bathUp', 'El baño de planta alta'], ['bathDown', 'El baño de planta baja'],
   ['view', 'Una mirada al barrio desde la propiedad'], ['courtyard', 'El patio y el acceso a la propiedad'],
 ];
+const productionUrl = new URL(config.productionUrl);
+if (productionUrl.protocol !== 'https:') throw new Error('The configured production URL must use HTTPS.');
+const canonicalUrl = productionUrl.href;
+const socialImageUrl = new URL(config.socialImage.replace(/^\//, ''), productionUrl).href;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': canonicalUrl + '#webpage',
+  url: canonicalUrl,
+  name: 'Habitaciones en Yofre Sud, Córdoba | Mariano Habitación',
+  description: 'Habitaciones en Yofre Sud, Córdoba. Espacio tranquilo con Wi-Fi, servicios incluidos, 2 baños y acceso al centro en colectivo. Consultá disponibilidad por WhatsApp.',
+  inLanguage: 'es-AR',
+  primaryImageOfPage: { '@type': 'ImageObject', url: socialImageUrl, width: 1200, height: 630 },
+  mainEntity: {
+    '@type': 'Accommodation',
+    '@id': canonicalUrl + '#alojamiento',
+    name: 'Habitaciones en Yofre Sud',
+    description: 'Tres habitaciones en dos plantas, con dos baños, Wi-Fi y servicios incluidos.',
+    url: canonicalUrl,
+    image: socialImageUrl,
+    numberOfRooms: 3,
+    numberOfBathroomsTotal: 2,
+    petsAllowed: false,
+    telephone: '+5493513394868',
+    containedInPlace: { '@type': 'Place', name: 'Yofre Sud, Córdoba, Argentina' },
+    amenityFeature: [
+      'Wi-Fi', 'Servicios incluidos', 'Espacio amueblado', 'Lavadora',
+      'Estacionamiento para motos', 'Cámaras de seguridad', 'Ambiente tranquilo',
+    ].map((name) => ({ '@type': 'LocationFeatureSpecification', name, value: true })),
+  },
+};
+const jsonLd = JSON.stringify(structuredData).replaceAll('<', '\\u003c');
 let html = await readFile(new URL('../src/index.html', import.meta.url), 'utf8');
 const whatsapp = `https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(config.whatsappMessage)}`;
 html = html.replaceAll('{{whatsapp}}', escape(whatsapp))
@@ -28,7 +60,9 @@ html = html.replaceAll('{{whatsapp}}', escape(whatsapp))
   .replace('{{gallery}}', galleryEntries.map(([name, caption], index) => `<a class="gallery-item" href="./media/${name}-1280.jpg" data-caption="${escape(caption)}" aria-label="Ver foto ${index + 1}: ${escape(caption)}">${photo(name, caption, 'gallery-photo')}</a>`).join('\n'))
   .replace('{{email}}', config.email ? `<a class="email-link" href="mailto:${escape(config.email)}">También podés escribirnos por email</a>` : '')
   .replace('{{captions}}', config.captions ? `<track kind="captions" src="${escape(config.captions)}" srclang="es" label="Español">` : '')
-  .replace('{{metadata}}', config.productionUrl ? `<link rel="canonical" href="${escape(config.productionUrl)}"><meta property="og:url" content="${escape(config.productionUrl)}">` : '');
+  .replaceAll('{{socialImage}}', escape(socialImageUrl))
+  .replace('{{canonical}}', escape(canonicalUrl))
+  .replace('{{metadata}}', `<link rel="canonical" href="${escape(canonicalUrl)}"><script type="application/ld+json">${jsonLd}</script>`);
 if (/\{\{/.test(html)) throw new Error('Unresolved template value');
 await mkdir('dist', { recursive: true });
 await cp('public', 'dist', { recursive: true });
